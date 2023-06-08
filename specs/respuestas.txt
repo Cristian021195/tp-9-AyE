@@ -1,0 +1,16 @@
+PUNTO 3
+
+• ¿Cuál es el tiempo de ejecución del algoritmo para ordenar n claves de longitud k. ¿Qué
+ocurre cuando k<<n? y cuando k≅n?.
+    El tiempo de ejecución del algoritmo es: T(n) ϵ O(n.k), 
+    Cuando k<<n T(n) ϵ O(n), Cuando k<<n T(n) ϵ O(n2) 
+• ¿Necesita memoria extra?
+    Si, necesita memoria extra porque MSD usa recursion.
+• ¿Es estable? ¿Por qué?
+    Si, es esatable, 
+• ¿Es sensible al orden inicial de los datos? ¿Por qué?
+• ¿Cuáles serían los cambios en su algoritmo para poder usar claves numéricas en otra
+base de numeración (por ej. 2, 8 o hexadecimal)?
+    Implementar arreglos de 2, 8, 10, 16 filas, segun corresponda.
+• ¿Se podría adaptar su algoritmo a claves alfabéticas? ¿En caso afirmativo, cómo? 
+    EL algoritmo puede adaptarde con letras, usando como referencia la tabla ascii.
