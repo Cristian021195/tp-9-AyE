@@ -1,0 +1,11 @@
+MSD RADIX: trabaja con una FILA
+    -> Clasificamos por centenas
+    -> Ordena las filas recursivamente
+    -> Concatenamos las filas (aqui sucede al final)
+        -> Clasificamos por decenas
+        -> Ordenamos las filas recursivamente
+        -> Concatenamos las filas
+            -> Clasificamos por unidades
+            -> Ordenamos las filas recursivamente
+            -> Concatenamos las filas (ultimo paso en recursion si tratamos con 3 digitos)
+** Se require conocer la cantidad de digitos de las claves para determinar, con que digito comenzar a clasificar MSD

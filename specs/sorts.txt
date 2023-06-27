@@ -1,0 +1,27 @@
+
+FUNCION MSD(F,n,M): FILA Є ITEM x CANTIDAD_DATOS Є entero x CANTIDAD_DIGITOS Є entero -> FILA
+    B, i Є entero;
+    Q(n) Є Arreglo BASE_10;
+
+
+    SI(ESFILAVACIA(F) || n = 1)
+        RETORNA F
+
+    PARA i = 0 HASTA n HACER
+        Q[i] = FILAVACIA()
+    
+    PARA i = 0 HASTA n HACER
+        B = (FRENTE(F) / 10^M-1) mod 10
+        Q[B] = ENFILA(Q[B], FRENTE(F))
+        F = DEFILA(F)
+
+    PARA i = 0 HASTA n HACER
+        SI (NOT ESFILAVACIA(Q[i]) AND LONGITUD(Q[i]) > 1 AND M != 0)
+            Q[i] = MSD(Q[i], n, M-1)
+    
+    PARA i = 0 HASTA n HACER
+        F = CONCATN(F, Q[i], LONGITUD(Q[i]))
+    
+    RETORNA F
+
+FIN
