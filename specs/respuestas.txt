@@ -1,0 +1,29 @@
+3 - Usando como base el algoritmo que escribió en el punto 1 conteste las siguientes preguntas 
+que le permitirán resumir las características que tiene el método de ordenación por residuos. 
+    • ¿Cuál es el tiempo de ejecución del algoritmo para ordenar n claves de longitud k. ¿Qué ocurre cuando k<<n? y cuando k≅n?. 
+        El tiempo de ejecución es: T(n) ∈ O(n.k)
+        Cuando k es mucho menor a n, la complejidad tiende a ser T(n) ∈ O(n)
+        Cuando k ≅ n T(n) ∈ O(n*k)
+
+    • ¿Necesita memoria extra?
+        Si los datos están en base b, se usa espacio extra para implementar las b filas.
+        O(n + kB), donde B es la base del digito, (B = 10 es decimal, B=2 binario, etc)
+        Usa recursion, por lo tanto require mas espacio en memoria que LSD, MSD es mas lento 
+        cuando hay mayor numero de entradas
+
+    • ¿Es estable? ¿Por qué?
+        Si es estable, ya que si en la fila se encuentran elementos que cumplen las mismas condiciones
+        para el ordenamiento, los pondra en el mismo orden que los encontró.
+        
+    • ¿Es sensible al orden inicial de los datos? ¿Por qué? 
+        No es sensible al orden inicial de los datos, el algoritmo recorre y analiza cada ELEMENTO
+        de la FILA
+
+    • ¿Cuáles serían los cambios en su algoritmo para poder usar claves numéricas en otra 
+        base de numeración (por ej. 2, 8 o hexadecimal)?
+        Los cambios serian que debo crear un arreglo de filas de acuerdo a la base del dato
+
+    • ¿Se podría adaptar su algoritmo a claves alfabéticas? ¿En caso afirmativo, cómo?
+        Se puede adaptar el algoritmo, necesitamos nada mas un diccionario ASCII o usar
+        metodos predefinidos del lenguaje que nos devuelvan dicho caracter a su valor
+        correspondiente ASCII al momento de comparar y ordenar de menor a mayor o al reves.
